@@ -53,6 +53,9 @@ inputs:
     description: "Run the SRCCLR with the `--no-graphs` option"
     required: false
     default: "false"
+  fail_build:
+    description: 'Fail the build upon findings. Takes true or false'
+    required: false
 runs:
   using: 'node20'
   main: 'dist/index.js'
